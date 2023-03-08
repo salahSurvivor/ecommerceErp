@@ -1,0 +1,102 @@
+<table>
+    <tr>
+        <th>N.C</th>
+        <th>Product Name</th>
+        <th>Purchase Date</th>
+        <th>City</th>
+        <th>Phone Number</th>
+        <th>Sale Price</th>
+        <th>Purchase Price</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let item of items | paginate: { itemsPerPage: count, currentPage: p }">
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.date }}</td>
+        <td>{{ item.city }}</td>
+        <td>{{ item.phone }}</td>
+        <td>{{ item.purchase }} DH</td>
+        <td>{{ item.sale }} DH</td>
+        <td>
+            <i 
+                class="fa-solid fa-pen-to-square btn btn-info" 
+                data-bs-toggle="modal" 
+                data-bs-target="#update"
+                (click)="getId(item.id)">
+            </i>
+        </td>
+    </tr>
+</table>
+
+<!--Including the pagination control.-->
+<div class="text-center">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
+
+<!--Success Section Start-->
+<div *ngIf="successShow" class="alert alert-success alert-dismissible fade show" role="alert">
+    <i class="fa-solid fa-check"></i>
+    Updated successfully !!
+    <button type="button" class="btn-close" (click)="toggleSuccess()"></button>
+  </div>
+<!--Success Section End-->     
+
+
+
+
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="update" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </span>
+                <input type="text" name="nameEdit" [(ngModel)]="nameEdit" class="form-control" placeholder="Product Name" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-city"></i>
+                </span>
+                <input type="text" name="cityEdit" [(ngModel)]="cityEdit" class="form-control" placeholder="Customer City" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                <input type="text" name="phoneEdit" [(ngModel)]="phoneEdit" class="form-control" placeholder="Customer Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-money-bill"></i>
+                </span>
+                <input type="text" name="purchaseEdit" [(ngModel)]="purchaseEdit" class="form-control" placeholder="The Purchase Price" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fa-solid fa-money-bill"></i>
+                </span>
+                <input type="text" name="saleEdit" [(ngModel)]="saleEdit" class="form-control" placeholder="Sale Price" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button 
+            type="button" 
+            class="btn btn-success text-white" 
+            data-bs-dismiss="modal"
+            (click)="updateInfo()">
+            Update
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 

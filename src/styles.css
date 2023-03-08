@@ -1,1 +1,166 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background: rgb(245, 245, 245);
+}
+/*Start Our NavBar*/
+.navbar{
+    padding: 20px;
+}
+
+.navbar .nav-link{
+    font-size: 1.1em;
+}
+
+.navbar-nav{
+    position: absolute;
+    right: 100px;
+}
+/*End Our NavBar*/
+
+
+/*Start Our Home*/
+.home-container{
+    margin: 50px auto;
+}
+
+.home-container p{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.erp-form-info{
+    padding: 16px;
+}
+
+.home-container .erp-form{
+    display: inline-block;
+    width: 25%;
+    margin: 0 25px;
+    border-radius: 16px;
+}
+
+.erp-form-redirect{
+    background: #fff;
+    padding: 16px;
+    border-radius: 0px 0px 14px 14px;
+}
+/*End Our Home*/
+
+/*Start Our Erp Page*/
+.erp-container{
+    margin: 50px auto;
+}
+
+.erp-container .button-a{
+    margin-bottom: 25px;
+}
+
+.erp-container form{
+    background: #fff;
+    margin: 26px 0;
+    padding: 26px;
+    border-radius: 16px;
+}
+
+.label-edit{
+    background: #fff;
+    color: rgb(7, 182, 182);
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+/*End Our Erp Page*/
+
+/*Erp Show Start*/
+.showErp-container{
+    margin: 100px auto;
+}
+
+.search{
+    float: right;
+    width: 300px;
+}
+
+.showErp-container table{
+    width: 100%;
+    text-align: center;
+}
+
+.showErp-container table tr th{
+    background: rgb(74, 187, 253);
+    padding: 15px;
+}
+
+.showErp-container table tr td{
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.alert{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 300px;
+}
+
+.form-edit{
+    margin: 26px auto;
+}
+/*Erp Show End*/
+
+/*Losses And Purchases Start*/
+.ls-pr{
+    margin: 50px auto;
+}
+
+.ls-pr .lsPr-title{
+    color: rgb(2, 152, 202);
+    font-weight: bold;
+    width: 100%;
+    max-width: auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ls-pr .lsPr-title p{
+    width: 50%;
+    margin: auto;
+    padding: 18px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.showErp-container-edit{
+    margin: 50px auto;
+}
+/*Losses And Purchases End*/
+
+/*Pagination Edit Start*/
+.ngx-pagination .current{
+    margin: 16px auto;
+}
+/*Pagination Edit End*/
+
+@media(max-width: 992px){
+    .navbar-nav{
+        position: relative;
+        right: 0;
+    }
+
+    .navbar-nav li{
+        margin: 3px 0;
+    }   
+
+    /*Home Page Start*/
+    .home-container .erp-form{
+        margin: 45px auto;
+        width: 60%;
+        display: block;
+    }
+
+    .home-container br{
+        display: none;
+    }    
+    /*Home Page End*/
+}

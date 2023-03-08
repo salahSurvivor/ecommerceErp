@@ -1,0 +1,217 @@
+{
+  "info": [
+    {
+      "name": "smart watch",
+      "city": "sale",
+      "date": "2023-02-05",
+      "phone": "077737237",
+      "purchase": "250",
+      "sale": 150,
+      "id": 1
+    },
+    {
+      "name": "AjiT9era",
+      "city": "salé",
+      "date": "2023-02-05",
+      "phone": "0658745214",
+      "purchase": "299",
+      "sale": "199",
+      "id": 2
+    },
+    {
+      "name": "smart tv",
+      "city": "rabat",
+      "date": "2023-02-05",
+      "phone": "0685987425",
+      "purchase": "3500",
+      "sale": "2999",
+      "id": 3
+    },
+    {
+      "name": "gat",
+      "date": "2023-02-07",
+      "city": "rabat",
+      "phone": "0685987425",
+      "purchase": "290",
+      "sale": "120",
+      "id": 4
+    },
+    {
+      "name": "gat",
+      "date": "2023-02-07",
+      "city": "sale",
+      "phone": "0789521478",
+      "purchase": "250",
+      "sale": "170",
+      "id": 5
+    },
+    {
+      "name": "3abaya",
+      "date": "2023-02-09",
+      "city": "rabat / hay riad",
+      "phone": "0789521478",
+      "purchase": "250",
+      "sale": "140",
+      "id": 6
+    },
+    {
+      "name": "smart watch",
+      "city": "rabat",
+      "date": "2023-02-13",
+      "phone": "0623458963",
+      "purchase": "150",
+      "sale": "110",
+      "id": 7
+    },
+    {
+      "name": "3abaya",
+      "date": "2023-02-13",
+      "city": "rabat",
+      "phone": "0789521478",
+      "purchase": "275",
+      "sale": "170",
+      "id": 8
+    },
+    {
+      "name": "smart watch d18",
+      "city": "tanger",
+      "date": "2023-02-14",
+      "phone": "0658789652",
+      "purchase": "280",
+      "sale": "170",
+      "id": 9
+    },
+    {
+      "name": "backpack",
+      "city": "rabat",
+      "date": "2023-02-16",
+      "phone": "0525896585",
+      "purchase": "150",
+      "sale": "100",
+      "id": 10
+    },
+    {
+      "name": "gat",
+      "date": "2023-02-19",
+      "city": "rabat",
+      "phone": "0777372379",
+      "purchase": "275",
+      "sale": "170",
+      "id": 11
+    },
+    {
+      "name": "gat",
+      "date": "2023-02-19",
+      "city": "rabat",
+      "phone": "0777372379",
+      "purchase": "275",
+      "sale": "170",
+      "id": 12
+    },
+    {
+      "name": "shoes",
+      "city": "rabat/agdal",
+      "date": "2023-02-19",
+      "phone": "0589632547",
+      "purchase": "270",
+      "sale": "110",
+      "id": 13
+    },
+    {
+      "name": "shoes",
+      "date": "2023-02-28",
+      "city": "rabat",
+      "phone": "0661235689",
+      "purchase": "250",
+      "sale": "110",
+      "id": 14
+    },
+    {
+      "name": "3abaya",
+      "date": "2023-02-28",
+      "city": "sale",
+      "phone": "0661235689",
+      "purchase": "275",
+      "sale": "170",
+      "id": 15
+    }
+  ],
+  "losses": [
+    {
+      "name": "livreur",
+      "price": "20",
+      "date": "2023-02-06",
+      "id": 1
+    },
+    {
+      "name": "packaging",
+      "price": "50",
+      "date": "2023-02-06",
+      "id": 2
+    },
+    {
+      "name": "transport",
+      "price": "50",
+      "date": "2023-02-06",
+      "id": 3
+    },
+    {
+      "name": "livreur",
+      "price": "10",
+      "date": "2023-02-07",
+      "id": 5
+    },
+    {
+      "name": "confirmation",
+      "price": "20",
+      "date": "2023-02-13",
+      "id": 6
+    },
+    {
+      "name": "livreur",
+      "price": "30",
+      "date": "2023-02-13",
+      "id": 7
+    },
+    {
+      "name": "confirmation",
+      "price": "15",
+      "date": "2023-02-28",
+      "id": 8
+    }
+  ],
+  "purchases": [
+    {
+      "nameP": "smart watch",
+      "priceP": "110",
+      "quantityP": "5",
+      "totalP": 550,
+      "dateP": "2023-02-06",
+      "id": 1
+    },
+    {
+      "nameP": "shoes",
+      "priceP": "110",
+      "quantityP": "5",
+      "totalP": 550,
+      "dateP": "2023-02-06",
+      "id": 2
+    },
+    {
+      "nameP": "3abaya",
+      "priceP": "170",
+      "quantityP": "5",
+      "totalP": 850,
+      "dateP": "2023-02-13",
+      "id": 3
+    },
+    {
+      "nameP": "shoes",
+      "priceP": "110",
+      "quantityP": "3",
+      "totalP": 330,
+      "dateP": "2023-02-28",
+      "id": 4
+    }
+  ]
+}
